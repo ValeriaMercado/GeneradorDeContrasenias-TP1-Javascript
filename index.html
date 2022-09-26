@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Generador de contrasenias</title>
+
+    <img src="imagenes/Titulo.png" aria-label="personalice su contraseña">
+
+
+    <div id="cuadro">
+        <h1 class="resultado" aria-label="contraseña generada"></h1>
+        <div class="botones">
+            <button class="btn-copia">
+                <p class="copiar" aria-label="copiar contraseña al portapapeles"><i
+                        class="fa-sharp fa-solid fa-paste"></i></p>
+            </button>
+            <button class="recargar" aria-label="refrescar contraseña"> <i
+                    class="fa-sharp fa-solid fa-arrows-rotate"></i></button>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="items">
+
+            <div class="long">
+                <form>
+
+                    <h3 aria-label="Longitud de la contraseña">LONGITUD</h3>
+                    <p><input type="radio" name="longitud" value="12" id="longitud12" /> 12 caracteres</p>
+                    <p><input type="radio" name="longitud" value="9" id="longitud9" /> 9 caracteres </p>
+                    <p><input type="radio" name="longitud" value="6" id="longitud6" /> 6 caracteres </p>
+            </div>
+            </form>
+
+            <div class="reglas">
+                <form>
+                    <h3>REGLAS</h3>
+                    <p><input type="radio" name="letras" value="checked" id="letras" /> Solo letras</p>
+                    <p><input type="radio" name="numeros" value="checked" id="nums" /> Solo números</p>
+                    <p><input type="radio" name="todos" value="checked" id="todos" /> Todos los caracteres</p>
+                </form>
+            </div>
+            <div class="caract">
+                <form>
+                    <h3>CARACTERES</h3>
+                    <p><input type="checkbox" name="mayusculas" value="" id="mayus"> Mayúsculas</p>
+                    <p><input type="checkbox" name="minusculas" value="" id="minus"> Minúsculas</p>
+                    <p><input type="checkbox" name="numeros" value="" id="numeros"> Números</p>
+                    <p><input type="checkbox" name="simbolos" value="" id="simbolos"> Símbolos</p>
+                </form>
+            </div>
+
+        </div>
+        <button id="btn" type="submit">Generar contraseña</button>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
