@@ -215,3 +215,40 @@ i {
     margin-left: 175px;
   }
 }
+
+@media (min-width: 280px) and (max-width: 670px) {
+  body {
+    background-size: 100vh;
+  }
+
+  #cuadro,
+  #container {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 250px;
+
+  }
+
+  img {
+    margin: 0 auto;
+    width: 250px;
+    height: 130px;
+    padding-left: 30px;
+    padding-top: 20px
+}
+#container .items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+
+}
+
+#container .items .reglas h3,
+#container .items .long h3 {
+  margin: 20px, 50px, 10px, 50px;
+} 
+
+#btn {
+  margin-left: 55px;
+}
+}
