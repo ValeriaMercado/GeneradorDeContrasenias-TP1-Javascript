@@ -184,7 +184,7 @@ i {
     background-size: auto;
   }
   img {
-    margin-left: 20%;
+    margin-left: 22%;
     width: 200px;
     height: 100px;
   }
@@ -192,7 +192,7 @@ i {
     font-size: 30px;
   }
   #cuadro {
-    margin-left: 3%;
+    margin-left: 9%;
     margin-bottom: 10px;
     width: 280px;
     height: 35px;
@@ -200,7 +200,7 @@ i {
   #container {
     width: 280px;
     height: 500px;
-    margin-left: 3%;
+    margin-left: 9%;
   }
   .btn-copia,
   .recargar,
