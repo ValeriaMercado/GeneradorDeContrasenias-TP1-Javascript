@@ -98,40 +98,55 @@ i {
   font-family: "Francois One", sans-serif;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 820px) and (max-width: 1200px) {
   body {
     background-size: 100vh;
   }
+
   img {
-    margin: 0 auto;
-    width: 250px;
-    height: 130px;
-    padding-left: 70px;
-    padding-top: 20px;
+    margin-left: 270px;
+    margin-top: 100px;
   }
 
   #cuadro {
-    margin: 0px 150px 20px 50px;
-    height: 50px;
+    margin: 20px 0px 0px 200px;
+    width: 550px;
+  }
+  #container {
+    height: 300px;
+    width: 550px;
+    margin: 20px 0px 0px 200px;
+  }
+  #btn {
+    margin: 0px 0px 0px 200px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    background-size: 100vh;
+  }
+
+  img {
+    margin-left: 40px;
+    width: 300px;
+    height: 150px;
+  }
+
+  #cuadro {
+    margin-left: 40px;
     width: 300px;
   }
 
   .resultado {
     font-size: 30px;
-    margin: auto;
-    margin-right: 10px;
   }
-
-  .btn-copia,
-  .recargar,
-  i {
-    font-size: 20px;
-  }
-
   #container {
     height: 650px;
     width: 300px;
-    margin: 100px 0px 0px 50px;
+    margin-left: 40px;
     margin-top: 1px;
   }
   #container .items {
@@ -139,116 +154,24 @@ i {
     flex-direction: column;
     margin-left: 100px;
   }
-
-  #container .items .reglas h3,
-  #container .items .long h3 {
-    margin-left: 0;
-  }
-
-  #container .items h3 {
-    font-size: 22px;
-  }
-
+  
   #btn {
-    margin: 0px 0px 0px 90px;
+    margin: 30px 0px 0px 80px;
   }
 }
-
-@media (min-width: 481px) and (max-width: 960px) {
-  body {
-    background-size: 100vh;
-  }
-  img {
-    margin: 0px 50px 0 50px;
-  }
-
-  #cuadro {
-    margin: auto;
-    margin-top: 5px;
-    height: 100px;
-    width: 400px;
-  }
-
-  .resultado {
-    font-size: 40px;
-    margin: auto;
-  }
-
-  .btn-copia,
-  .recargar,
-  i {
-    font-size: 30px;
-  }
-
-  #container {
-    height: 750px;
-    width: 400px;
-    margin: auto;
-    margin-top: 30px;
-  }
-  #container .items {
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-  }
-
-  #container .items .reglas h3,
-  #container .items .long h3 {
-    margin-left: 0;
-  }
-
-  #container .items h3 {
-    font-size: 22px;
-  }
-  #container .items p {
-    font-size: 18px;
-  }
-  #btn {
-    margin: 0px 0px 0px 150px;
+@media (min-width: 660px) and (max-width: 690px) {
+   img, #cuadro, #container{
+    margin-left: 200px;
   }
 }
-@media (min-width: 700px) and (max-width: 1280px) {
-  #cuadro {
-    margin: auto;
-  }
-  img {
-    margin-left: 175px;
-  }
-}
-
-@media (min-width: 280px) and (max-width: 670px) {
-  body {
-    background-size: 100vh;
-  }
-
-  #cuadro,
-  #container {
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 250px;
-
-  }
-
-  img {
-    margin: 0 auto;
-    width: 250px;
-    height: 130px;
-    padding-left: 30px;
-    padding-top: 20px
-}
-#container .items {
-  display: flex;
-  flex-direction: column;
-  margin-left: 55px;
-
-}
-
-#container .items .reglas h3,
-#container .items .long h3 {
-  margin: 20px, 50px, 10px, 50px;
-} 
-
-#btn {
-  margin-left: 55px;
+@media (min-width:540px) and (max-width: 720px) {
+  img{
+    margin-left: 140px;
+   
+ }
+ #cuadro, #container{
+  width: 300px;
+  margin-left: 140px;
+  margin-top: 50px;
 }
 }

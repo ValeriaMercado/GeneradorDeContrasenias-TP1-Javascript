@@ -28,43 +28,66 @@ const opcionesSeleccionadas = []
 
 //***************************************************EVENTOS*******************************************************************//
 mayusculas.addEventListener("click", (e) => {
-    (mayusculas.checked) ? opcionesSeleccionadas.push(letrasMayusculas) : opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMayusculas), 1)
+    (mayusculas.checked) ? opcionesSeleccionadas.push(letrasMayusculas) :
+        opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMayusculas), 1)
 })
 
+
 minusculas.addEventListener("click", (e) => {
-    (minusculas.checked) ? opcionesSeleccionadas.push(letrasMinusculas) : opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMinusculas), 1)
+    (minusculas.checked) ? opcionesSeleccionadas.push(letrasMinusculas) :
+        opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMinusculas), 1)
 })
 
 numeros.addEventListener("click", (e) => {
-    (numeros.checked) ? opcionesSeleccionadas.push(caracteresNums) : opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(caracteresNums), 1)
+    (numeros.checked) ? opcionesSeleccionadas.push(caracteresNums) :
+        opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(caracteresNums), 1)
 })
 
 simbolos.addEventListener("click", (e) => {
-    (simbolos.checked) ? opcionesSeleccionadas.push(signos) : opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(signos), 1)
+    (simbolos.checked) ? opcionesSeleccionadas.push(signos) :
+        opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(signos), 1)
+
 })
 
+// ******************************************REGLAS****************************************
 soloLetras.addEventListener("click", () => {
-    soloNum.disabled = true; todos.disabled = true; numeros.disabled = true; simbolos.disabled = true; mayusculas.checked = opcionesSeleccionadas.push(letrasMayusculas); (minusculas.checked) = opcionesSeleccionadas.push(letrasMinusculas);
-})
+    opcionesSeleccionadas.pop();
+    opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(caracteresNums), 1)
+    simbolos.checked = false; opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(signos), 1)
+    mayusculas.checked = true; opcionesSeleccionadas.push(letrasMayusculas)
+    minusculas.checked = true; opcionesSeleccionadas.push(letrasMinusculas)
+    soloNum.checked = false;
+    todos.checked = false;
+    numeros.checked = false;
+    signos.checked = false;
+
+}
+)
 
 soloNum.addEventListener("click", () => {
-    soloLetras.disabled = true; todos.disabled = true; mayusculas.disabled = true; minusculas.disabled = true; simbolos.disabled = true; numeros.checked = opcionesSeleccionadas.push(caracteresNums);
-})
+    opcionesSeleccionadas.pop();
+    opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMayusculas), 1)
+    opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMinusculas), 1)
+    opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(signos), 1)
+    numeros.checked = true; opcionesSeleccionadas.push(caracteresNums)
+    simbolos.checked = false;
+    mayusculas.checked = false;
+    minusculas.checked = false;
+    todos.checked = false;
+    signos.checked = false;
+    soloLetras.checked = false;
+}
+)
 
 todos.addEventListener("click", () => {
-    soloLetras.disabled = true; soloNum.disabled = true; mayusculas.checked = opcionesSeleccionadas.push(letrasMayusculas); (minusculas.checked) = opcionesSeleccionadas.push(letrasMinusculas); numeros.checked = opcionesSeleccionadas.push(caracteresNums); simbolos.checked = opcionesSeleccionadas.push(signos);
-})
+    opcionesSeleccionadas.pop();
+    numeros.checked = true; opcionesSeleccionadas.push(caracteresNums);
+    mayusculas.checked = true; opcionesSeleccionadas.push(letrasMayusculas);
+    minusculas.checked = true; opcionesSeleccionadas.push(letrasMinusculas);
+    simbolos.checked = true; opcionesSeleccionadas.push(signos);
+    soloNum.checked = false;
+    soloLetras.checked = false;
 
-longitud12.addEventListener("click", () => {
-    longitud9.disabled = true; longitud6.disabled = true;
-})
-
-longitud9.addEventListener("click", () => {
-    longitud12.disabled = true; longitud6.disabled = true;
-})
-
-longitud6.addEventListener("click", () => {
-    longitud12.disabled = true; longitud9.disabled = true;
 })
 //**************************************LONGITUDES Y BUCLE*****************************************************************//
 
@@ -80,6 +103,9 @@ btn.addEventListener("click", () => {
         contraseniaFinal += contrasenia.charAt(Math.floor(Math.random() * contrasenia.length));
     }
     resultado.innerHTML = contraseniaFinal
+
+    console.log(contraseniaFinal)
+    console.log(opcionesSeleccionadas)
 })
 
 //*******************************************COPIADO Y REFRESCAR***************************************************************//
@@ -99,3 +125,8 @@ recargar.addEventListener("click", () => {
     resultado.innerHTML = contraseniaFinal
 })
 
+btn.addEventListener ("click", () => {
+    if(!mayusculas.checked && !minusculas.checked && !numeros.checked && !simbolos.checked){
+        return alert(`¡Hey! Debes seleccionar una longitud y al menos un caracter para generar una contraseña 😅`)
+    }
+})
