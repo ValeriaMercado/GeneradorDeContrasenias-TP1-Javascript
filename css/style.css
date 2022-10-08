@@ -1,7 +1,6 @@
 body {
   background-image: url("https://fondosmil.com/fondo/15995.jpg");
   background-size: 100%;
-  min-height: 100%;
 }
 
 img {
@@ -98,80 +97,122 @@ i {
   font-family: "Francois One", sans-serif;
 }
 
-@media (min-width: 820px) and (max-width: 1200px) {
+@media (min-width: 1920px) {
   body {
-    background-size: 100vh;
+    background-size: 100%;
   }
 
   img {
-    margin-left: 270px;
-    margin-top: 100px;
+    margin-left: 40%;
+    margin-top: 200px;
   }
 
   #cuadro {
-    margin: 20px 0px 0px 200px;
-    width: 550px;
-  }
-  #container {
-    height: 300px;
-    width: 550px;
-    margin: 20px 0px 0px 200px;
-  }
-  #btn {
-    margin: 0px 0px 0px 200px;
+    margin-left: 34%;
+    width: 600px;
   }
 }
-
-
-
-@media (max-width: 768px) {
+@media (min-width: 1024px) and (orientation: landscape) {
   body {
-    background-size: 100vh;
+    background-size: 100%;
   }
 
   img {
-    margin-left: 40px;
+    margin-left: 39%;
     width: 300px;
     height: 150px;
   }
 
   #cuadro {
-    margin-left: 40px;
-    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 500px;
   }
 
+  #container {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  body {
+    background-size: 100%;
+  }
+  img {
+    margin-left: 17%;
+    margin-top: 70px;
+  }
+  #cuadro {
+    margin-left: 8%;
+    margin-bottom: 30px;
+    width: 500px;
+  }
+  #container {
+    margin-left: 8%;
+    width: 500px;
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  body {
+    background-size: 100%;
+  }
+  img {
+    margin-left: 35%;
+    width: 400px;
+    height: 200px;
+  }
+  .resultado {
+    font-size: 40px;
+  }
+  #cuadro {
+    margin-left: 30%;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 55px;
+  }
+  #container {
+    margin-left: 30%;
+    width: 500px;
+  }
+  #btn {
+    margin-left: 35%;
+  }
+}
+
+@media (min-width: 0px) and (orientation: portrait) {
+  body {
+    background-size: auto;
+  }
+  img {
+    margin-left: 25%;
+    width: 200px;
+    height: 100px;
+  }
   .resultado {
     font-size: 30px;
   }
-  #container {
-    height: 650px;
+  #cuadro {
+    margin-left: 10%;
+    margin-bottom: 10px;
     width: 300px;
-    margin-left: 40px;
-    margin-top: 1px;
+    height: 35px;
   }
+  #container {
+    width: 300px;
+    height: 480px;
+    margin-left: 10%;
+  }
+
   #container .items {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
+    line-height: 0px;
   }
-  
+  #container .items h3 {
+    margin-left: 4px;
+  }
   #btn {
-    margin: 30px 0px 0px 80px;
+    margin-left: 35%;
   }
-}
-@media (min-width: 660px) and (max-width: 690px) {
-   img, #cuadro, #container{
-    margin-left: 200px;
-  }
-}
-@media (min-width:540px) and (max-width: 720px) {
-  img{
-    margin-left: 140px;
-   
- }
- #cuadro, #container{
-  width: 300px;
-  margin-left: 140px;
-  margin-top: 50px;
-}
 }
