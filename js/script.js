@@ -50,7 +50,6 @@ simbolos.addEventListener("click", (e) => {
 })
 
 // ******************************************REGLAS****************************************
-
 soloLetras.addEventListener("click", () => {
     opcionesSeleccionadas.length = 2;
     opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(caracteresNums), 1)
@@ -72,7 +71,6 @@ soloLetras.addEventListener("click", () => {
     }
 }
 )
-
 soloNum.addEventListener("click", () => {
     opcionesSeleccionadas.pop();
     opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMayusculas), 1)
@@ -87,7 +85,6 @@ soloNum.addEventListener("click", () => {
     soloLetras.checked = false;
 }
 )
-
 todos.addEventListener("click", () => {
     opcionesSeleccionadas.shift()
     opcionesSeleccionadas.shift();
@@ -115,7 +112,6 @@ btn.addEventListener("click", () => {
     }
     resultado.innerHTML = contraseniaFinal
 })
-
 //*******************************************COPIADO Y REFRESCAR***************************************************************//
 
 btnCopia.addEventListener("click", () => {
