@@ -32,7 +32,6 @@ mayusculas.addEventListener("click", (e) => {
         opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMayusculas), 1);
 })
 
-
 minusculas.addEventListener("click", (e) => {
     (minusculas.checked) ? opcionesSeleccionadas.push(letrasMinusculas) :
         opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMinusculas), 1);
@@ -51,16 +50,7 @@ simbolos.addEventListener("click", (e) => {
 })
 
 // ******************************************REGLAS****************************************
-todos.addEventListener("click", () => {
-    opcionesSeleccionadas.pop();
-    numeros.checked = true; opcionesSeleccionadas.push(caracteresNums);
-    mayusculas.checked = true; opcionesSeleccionadas.push(letrasMayusculas); 
-    minusculas.checked = true; opcionesSeleccionadas.push(letrasMinusculas);
-    simbolos.checked = true; opcionesSeleccionadas.push(signos);
-    soloNum.checked = false;
-    soloLetras.checked = false;;
 
-})
 soloLetras.addEventListener("click", () => {
     opcionesSeleccionadas.length = 2;
     opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(caracteresNums), 1)
@@ -72,16 +62,14 @@ soloLetras.addEventListener("click", () => {
     numeros.checked = false;
     signos.checked = false;
 
-    if (mayusculas.checked && !minusculas.checked){
-         opcionesSeleccionadas.push(letrasMayusculas)
-         opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMinusculas), 1);
+    if (mayusculas.checked && !minusculas.checked) {
+        opcionesSeleccionadas.push(letrasMayusculas)
+        opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMinusculas), 1);
     }
-    if (minusculas.checked && !mayusculas.checked){
+    if (minusculas.checked && !mayusculas.checked) {
         opcionesSeleccionadas.push(letrasMinusculas)
         opcionesSeleccionadas.splice(opcionesSeleccionadas.indexOf(letrasMayusculas), 1);
     }
-
-
 }
 )
 
@@ -100,7 +88,17 @@ soloNum.addEventListener("click", () => {
 }
 )
 
-
+todos.addEventListener("click", () => {
+    opcionesSeleccionadas.shift()
+    opcionesSeleccionadas.shift();
+    numeros.checked = true; opcionesSeleccionadas.push(caracteresNums);
+    mayusculas.checked = true; opcionesSeleccionadas.push(letrasMayusculas);
+    minusculas.checked = true; opcionesSeleccionadas.push(letrasMinusculas);
+    simbolos.checked = true; opcionesSeleccionadas.push(signos);
+    soloNum.checked = false;
+    soloLetras.checked = false; 
+}
+)
 
 //**************************************LONGITUDES Y BUCLE*****************************************************************//
 
@@ -112,13 +110,10 @@ btn.addEventListener("click", () => {
 
     let contrasenia = opcionesSeleccionadas.join('')
     let contraseniaFinal = "";
-    for (let i = 0; i < length ; i++) {
+    for (let i = 0; i < length; i++) {
         contraseniaFinal += contrasenia.charAt(Math.floor(Math.random() * contrasenia.length));
     }
     resultado.innerHTML = contraseniaFinal
-
-    console.log(contraseniaFinal)
-    console.log(opcionesSeleccionadas)
 })
 
 //*******************************************COPIADO Y REFRESCAR***************************************************************//
