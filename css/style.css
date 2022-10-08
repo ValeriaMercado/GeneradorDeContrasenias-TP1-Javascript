@@ -151,7 +151,6 @@ i {
     width: 500px;
   }
 }
-
 @media (min-width: 480px) and (orientation: landscape) {
   body {
     background-size: 100%;
