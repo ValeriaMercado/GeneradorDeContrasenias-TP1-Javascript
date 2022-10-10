@@ -4,7 +4,7 @@ body {
 }
 
 img {
-  margin-left: 35%;
+  margin-left: 41%;
   margin-right: auto;
   width: 400px;
   height: 200px;
@@ -104,10 +104,9 @@ i {
   }
 
   img {
-    width: 280px;
-    height: 150px;
-    margin-left: 15%;
-    margin-right: auto;
+    width: 230px;
+    height: 118px;
+    margin-left: 18%;
     margin-top: 10px;
   }
   .resultado {
@@ -142,7 +141,7 @@ i {
     background-size: 100vh;
   }
   img {
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 15%;
   }
   #cuadro,
@@ -151,13 +150,12 @@ i {
     margin-right: auto;
   }
 }
-
-@media (min-width: 1920px){
-  img{
-    margin-left: 40%;
-    margin-top: 5%;
+@media (min-width: 961px) and (max-width: 1920px) {
+  img {
+    margin-left: 35%;
   }
 }
+
 
 
 
