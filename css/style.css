@@ -95,7 +95,7 @@ i {
   font-family: "Francois One", sans-serif;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   body {
     background-size: 100vh;
     overflow-x: hidden;
@@ -129,12 +129,6 @@ i {
   }
   #btn {
     margin-left: 30%;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    background-size: 100vh;
   }
 }
 
