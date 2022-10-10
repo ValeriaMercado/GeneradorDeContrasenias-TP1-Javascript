@@ -5,13 +5,15 @@ body {
 
 img {
   margin-left: 35%;
+  margin-right: auto;
   width: 400px;
   height: 200px;
 }
 #cuadro {
   display: flex;
   align-items: center;
-  margin-left: 370px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
   background-color: white;
   height: 70px;
@@ -104,7 +106,7 @@ i {
   img {
     width: 280px;
     height: 150px;
-    margin-left: 12%;
+    margin-left: 15%;
     margin-right: auto;
     margin-top: 10px;
   }
@@ -140,7 +142,7 @@ i {
     background-size: 100vh;
   }
   img {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 15%;
   }
   #cuadro,
@@ -150,10 +152,12 @@ i {
   }
 }
 
-@media (min-width: 961px) and (max-width: 2000px) {
-  #cuadro,
-  #container {
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width: 1920px){
+  img{
+    margin-left: 40%;
+    margin-top: 5%;
   }
 }
+
+
+
