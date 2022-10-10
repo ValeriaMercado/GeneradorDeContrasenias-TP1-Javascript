@@ -104,7 +104,7 @@ i {
   img {
     width: 280px;
     height: 150px;
-    margin-left: 20%;
+    margin-left: 12%;
     margin-right: auto;
     margin-top: 10px;
   }
@@ -117,7 +117,7 @@ i {
     margin-right: auto;
   }
   #container {
-    height: 550px;
+    height: 530px;
     width: 300px;
   }
   #container .items {
