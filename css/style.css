@@ -104,10 +104,9 @@ i {
   }
 
   img {
-    width: 280px;
-    height: 150px;
+    width: 250px;
+    height: 120px;
     margin-left: 15%;
-    margin-right: auto;
     margin-top: 10px;
   }
   .resultado {
