@@ -103,11 +103,19 @@ i {
     overflow-x: hidden;
   }
 
-  img {
+  #imagen {
+   
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  #imagen img {
     width: 230px;
     height: 118px;
-    margin-left: 18%;
-    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  
   }
   .resultado {
     font-size: 30px;
@@ -140,10 +148,17 @@ i {
   body {
     background-size: 100vh;
   }
-  img {
-    margin-left: 25%;
-    margin-top: 15%;
-  }
+  #imagen {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   }
+ 
+   #imagen img {
+     margin-left: auto;
+     margin-right: auto;
+   
+   }
   #cuadro,
   #container {
     margin-left: auto;
@@ -151,11 +166,18 @@ i {
   }
 }
 @media (min-width: 961px) and (max-width: 1920px) {
-  img {
-    margin-left: 35%;
+  #imagen {
+   
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   }
+ 
+   #imagen img {
+     margin-left: auto;
+     margin-right: auto;
+   
+   }
   }
-}
-
-
 
 
