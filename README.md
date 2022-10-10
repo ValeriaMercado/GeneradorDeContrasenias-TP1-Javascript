@@ -8,7 +8,7 @@ la carrera de **Desarrollo Frontend** que curso actualmente en **ADA ITW.**
 Para ello, tuvimos que basarnos en un generador de contraseñas clásico de internet, con diferentes partes y secciones a elegir por
 el usuario, tales como la longitud de la contraseña, y los diferentes tipos de carácteres a seleccionar.
 
-Se encuentra realizado con HTML, CSS Y JAVASCRIPT.
+Se encuentra realizado con HTML, CSS Y JAVASCRIPT ⚒
 
 ¡Espero que les guste! 💻🧡
 
