@@ -108,12 +108,14 @@ i {
     margin-right: auto;
     margin-top: 10px;
   }
+  .resultado {
+    font-size: 30px;
+  }
   #cuadro {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
-
   #container {
     height: 550px;
     width: 300px;
@@ -129,6 +131,7 @@ i {
   }
   #btn {
     margin-left: 30%;
+    margin-top: 5px;
   }
 }
 
